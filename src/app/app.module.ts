@@ -5,27 +5,36 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
-import { MultiSelectModule } from 'primeng/multiselect';
-import { MultiselectComponent } from './multiselect/multiselect.component';
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
+import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
+import { ToastModule } from 'primeng/toast';
+import { ConfirmationService,MessageService } from 'primeng/api';
+import { TimelineComponent } from './timeline/timeline.component';
 //import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown'
-
+import { TimelineModule } from 'primeng/timeline';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomepageComponent,
-    MultiselectComponent
+    ConfirmDialogComponent,
+    TimelineComponent
     
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MultiSelectModule,
-    BrowserAnimationsModule,
-   // NgMultiSelectDropDownModule.forRoot()
+  
+   BrowserAnimationsModule,
+    ConfirmDialogModule,
+    ToastModule,
+    TimelineModule
   ],
-  providers: [],
+  providers: [
+    ConfirmationService,
+    MessageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
