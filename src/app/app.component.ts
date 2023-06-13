@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+//import { MultiSelectModule } from 'primeng/multiselect';
 
 @Component({
-  selector: 'nav-bar',
+  selector: 'root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular_app';
+
 }
