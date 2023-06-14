@@ -6,3 +6,14 @@
     
 </app-timeline>
 
+<!-- event payload -->
+<label for="">Event Payload:</label><input class="mx-2" (input)="print($event)" type="text">
+<p>{{name}}</p>
+
+<label for="">Template reference variable:</label><input class="mx-2" #names (input)="print2(names)" type="text">
+<p>{{name2}}</p>
+
+<label for="">KeyUp:</label><input class="mx-2" (keyup)="keyups=$any($event.target).value" type="text">
+<p>{{keyups}}</p>
+
+

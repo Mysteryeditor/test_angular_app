@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 const routes: Routes = [
   {
-    path:"banner1",
+    path:"homepage",
     component:HomepageComponent
   }
 ];
