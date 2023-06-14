@@ -1,0 +1,26 @@
+<div class="container">
+    <h1>Mouse Events</h1>
+    <div class="row">
+        <div class="col-lg-6 col-sm-12">
+    <h4>1.Click</h4>
+    <p [style.color]="color"(click)="click()">Click Me!</p>
+    
+    <h4>2.Double Click</h4>
+    <img height="500" bind-src="imgUrl"(dblclick)="dblClick()">
+
+    <h4>3.MouseOver & MouseLeave</h4>
+    <p (mouseover)="mouseOver()" (mouseleave)="mouseLeave()" [innerText]="HoverMe" ></p>
+</div>
+
+<div class="col-lg-6 col-sm-12">
+    <h4>4.MouseEnter & MouseLeave</h4>
+    <p (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()" [innerText]="text1"> </p>
+
+    <h4>5.MouseDown & MouseUp</h4>
+    <button (mouseup)="mouseUp()" (mousedown)="mouseDown()" [style.background-color]="bgcolor">Click ME</button>
+
+    <h4>6.Drag & DragOver</h4>
+    <img height="500" bind-src="dogUrl" (drag)="drag()" (dragover)="dragOver()">
+</div>
+</div>
+</div>

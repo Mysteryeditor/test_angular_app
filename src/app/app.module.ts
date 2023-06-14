@@ -12,6 +12,7 @@ import { ConfirmationService,MessageService } from 'primeng/api';
 import { TimelineComponent } from './timeline/timeline.component';
 //import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown'
 import { TimelineModule } from 'primeng/timeline';
+import { MouseeventsComponent } from './mouseevents/mouseevents.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TimelineModule } from 'primeng/timeline';
     NavbarComponent,
     HomepageComponent,
     ConfirmDialogComponent,
-    TimelineComponent
+    TimelineComponent,
+    MouseeventsComponent
     
     ],
   imports: [
