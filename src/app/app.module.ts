@@ -13,7 +13,10 @@ import { TimelineComponent } from './timeline/timeline.component';
 //import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown'
 import { TimelineModule } from 'primeng/timeline';
 import { MouseeventsComponent } from './mouseevents/mouseevents.component';
-
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { BrowserdetailsComponent } from './browserdetails/browserdetails.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { TableModule } from 'primeng/table';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,13 +24,16 @@ import { MouseeventsComponent } from './mouseevents/mouseevents.component';
     HomepageComponent,
     ConfirmDialogComponent,
     TimelineComponent,
-    MouseeventsComponent
+    MouseeventsComponent,
+    EmployeeDetailsComponent,
+    BrowserdetailsComponent,
+    DirectivesComponent
     
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-  
+    TableModule,
    BrowserAnimationsModule,
     ConfirmDialogModule,
     ToastModule,

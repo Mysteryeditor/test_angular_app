@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h1>Enter Details!</h1>
+            <label class="mt-2" style="width: 200px;" for="Name">Employee Name:</label>
+            <input type="text" (keyup.enter)="name=$any($event.target).value" (keyup.escape)="name=''" id="Name">
+            <br>
+            <label class="mt-2" style="width: 200px;" for="Age">Employee Age:</label>
+            <input type="text" (keyup.enter)="age=$any($event.target).value" (keyup.escape)="age=''" id="Age">
+            <br>
+            <label class="mt-2" style="width: 200px;" for="Department">Employee Department:</label>
+            <input type="text" (keyup.enter)="dept=$any($event.target).value" (keyup.escape)="dept=''" id="Department">
+            <br>
+            <label class="mt-2" style="width: 200px;" for="Salary">Employee Salary:</label>
+            <input type="text" (keyup.enter)="sal=$any($event.target).value" (keyup.escape)="sal=''" id="Salary">
+            <br>
+        </div>
+
+        <div class="col-6">
+            <h2>Employee Details</h2>
+            <label class="mt-2">Name:</label>
+            <label class="mx-1">{{name}}</label>
+            <br>
+            <label class="mt-2">Age:</label>
+            <label class="mx-1">{{age}}</label>
+            <br>
+            <label class="mt-2">Department:</label>
+            <label class="mx-1">{{dept}}</label>
+            <br>
+            <label class="mt-2">Salary:</label>
+            <label class="mx-1">{{sal}}</label>
+        </div>
+
+    </div>
+
+</div>

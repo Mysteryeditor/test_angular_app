@@ -1,0 +1,60 @@
+<h1>Employee Details</h1>
+
+<!-- table -->
+<!-- <p-table>
+    <ng-template pTemplate="header" let-colums>
+<tr>
+    <th>
+        Name
+    </th>
+</tr>
+    </ng-template>
+
+    <ng-template>
+        <ng-template pTemplate="body" *ngFor="let emp of employees">
+            <tr >
+                <td >
+                    {{emp.name}}
+                </td>
+            </tr>
+        </ng-template>
+    </ng-template>
+</p-table> -->
+<div class="container">
+    <table class="table ">
+        <thead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Department</th>
+            <th>DOB</th>
+            <th>Image</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let emp of employees">
+                <td>{{emp.id}}</td>
+                <td>{{emp.name}}</td>
+                <td>{{emp.age}}</td>
+                <td>{{emp.dept}}</td>
+                <td>{{emp.dob}}</td>
+                <td><img style="height: 60px;width: 80px;" bind-src="emp.image" alt="loading"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- cards -->
+<!-- <div class="container">
+    <h1>Product Details</h1>
+    <div class=row *ngFor="let p1 of productdata">
+        <div class="col-lg-4 card">
+            <img class="card-img-top" src="url" alt="productimage">
+            <div class="card-body">
+                <h5 class="card-title"> 
+                    {{p1.pname}}
+                </h5>
+                <p class="card-text">{{p1.price}}</p>
+            </div>
+        </div>
+    </div>
+</div> -->

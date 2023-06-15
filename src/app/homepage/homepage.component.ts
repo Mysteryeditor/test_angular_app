@@ -35,7 +35,7 @@ print2(names:any){
   this.name2=names.value;
 }
 
-keyups=''
+keyups='';
 
 
 
