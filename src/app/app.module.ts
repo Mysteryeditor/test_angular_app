@@ -17,6 +17,8 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
 import { BrowserdetailsComponent } from './browserdetails/browserdetails.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { TableModule } from 'primeng/table';
+import { TabMenuModule } from 'primeng/tabmenu';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,9 @@ import { TableModule } from 'primeng/table';
     MouseeventsComponent,
     EmployeeDetailsComponent,
     BrowserdetailsComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    TabMenuModule ,
+    FormsModule 
     
     ],
   imports: [

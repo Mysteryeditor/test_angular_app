@@ -1,5 +1,31 @@
 [{
     "id":1,
     "pname":"IronMan Action Figure",
-    "price":"200"
-}]
+    "price":"200",
+    "img":"https://cdn.shopify.com/s/files/1/0011/8367/8476/products/Ironmanwithgear13_1400x.png?v=1648279297"
+},
+{
+    "id":2,
+    "pname":"Captain America",
+    "price":"310",
+    "img":"https://m.media-amazon.com/images/I/71PFUD98hkL._AC_UF1000,1000_QL80_.jpg"
+},
+{
+    "id":3,
+    "pname":"Black Panther",
+    "price":"270",
+    "img":"https://image.smythstoys.com/original/desktop/170080.jpg"
+},
+{
+    "id":4,
+    "pname":"Spider man",
+    "price":"340",
+    "img":"https://www.shutterstock.com/image-photo/ayuttayathailand-october-04-2014-spiderman-260nw-227201497.jpg"
+},
+{
+    "id":5,
+    "pname":"Doctor Strange",
+    "price":"299",
+    "img":"https://m.media-amazon.com/images/I/414bYicFWzL._AC_UF1000,1000_QL80_.jpg"
+}
+]

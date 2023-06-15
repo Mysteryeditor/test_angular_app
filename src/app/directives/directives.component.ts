@@ -37,6 +37,7 @@ employees:employee[]=[{
 // cards
 
 // productdata:products[]=prodata
+productdata:any=(prodata as any).default;
 
 }
 
